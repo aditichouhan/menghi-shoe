@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* transform: translateX(100%); */
+    transform: translateY(100%);
+    height: 100%;
+    width: 20%;
+    /* background-color: rgb(65, 153, 153); */
+    background-color: #4a9892;
+    transition: 0.5s;
+}
+.bar-div{
+    width: 100%;
+    height: 40%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    right: 21%;
+    /* align-items: center;
+    justify-content: centre;  */
+}
+.tact-text{
+    font-size: 1.7vmax;
+    line-height: 6vmax;
+    text-transform: capitalize;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tact-text::after{
+    content: "";
+    height: 2%;
+    width: 0;
+    background-color: rgb(245, 239, 239);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transition: 0.5s;
+}
+.tact-text:hover::after{
+    width: 100%;
+}
+
+.ri-menu-line {
+    font-size: 2vmax;
+    margin-right: 4%;
+    color: white;
+}
+
+.page1 {
+    height: 122%;
+    width: 100%;
+    /* background-color: rgb(252, 165, 225); */
+    position: absolute;
+    left: 0%;
+    top: 0;
+    background-size: cover;
+    animation: animate 16s ease-in-out infinite;
+}
+.con-text1{
+    z-index: 999;
+    position: absolute;
+    top: 30%;
+    font-size: 6vmax;
+    color: white;
+    font-weight: 100;
+}
+.the-spn1{
+    color: #a05f9b;
+   
+}
+.the-spn2{
+    color: #4a9892;
+   
+}
+.the-spn3{
+    color: #7b7742;
+   
+}
+.con-text2{
+    z-index: 999;
+    position: absolute;
+    top: 30%;
+    font-size: 6vmax;
+    color: white;
+    font-weight: 100;
+    
+}
+.con-text3{
+    z-index: 999;
+    position: absolute;
+    top: 30%;
+    font-size: 6vmax;
+    color: white;
+    font-weight: 100;
+}
+
+@keyframes animate{
+    0%,100%{
+        background-color: #fca5da;
+    }
+    25%{
+        background-color: #ffd5ce;
+    }
+    50%{
+        background-color: rgb(198,199,133);
+    }
+   75%{
+        background-color: #fca5da;
+   }
+}
+
+nav {
+    height: 15%;
+    width: 100%;
+    position: fixed;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-img {
+    height: 100px;
+    width: 80px;
+    margin-left: 3%;
+}
+
+.menu-img {
+    height: 30px;
+    width: 30px;
+}
+
+.container {
+    width: 100%;
+    height: 80%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .slide-div{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+} */
+
+.swiper {
+    width: 40%;
+    height: fit-content;
+
+}
+.swiper-wrapper{
+    height: 100%;
+    width: 100%;
+    background: #804783;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: #804783;
+}
+
+/* ---------- */
+.page2 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(122, 25, 127);
+    position: relative;
+    top: 115%;
+}
+
+.main-page2 {
+    height: 100%;
+    width: 100%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left {
+    height: 100%;
+    width: 45%;
+    /* background-color: darkcyan; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.img1-div {
+    height: 230px;
+    width: 230px;
+    /* background-color: red; */
+    background-image: url(http://www.menghishoes.com/site/wp-content/themes/menghishoes/img/azienda1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 115px;
+    position: relative;
+    margin-top: 18%;
+}
+
+.img2-div {
+    height: 140px;
+    position: relative;
+    top: -25%;
+    left: 48%;
+    width: 140px;
+    /* background-color: rgb(92, 72, 72); */
+    background-image: url(http://www.menghishoes.com/site/wp-content/themes/menghishoes/img/azienda2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100px;
+    /* margin-top: 16%; 
+     margin-right: 10%; */
+}
+
+.icon-main-div {
+    height: 10%;
+    width: 50px;
+    /* background-color: rgb(119, 0, 255); */
+    position: relative;
+    top: -30%;
+    left: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right {
+    height: 100%;
+    width: 60%;
+    /* background-color: rgb(113, 136, 136); */
+}
+
+.meghi-pera {
+    font-size: 1vmax;
+    margin: 17% 0 0 2%;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 200;
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    margin: 2% 0 0 35%;
+    font-size: 4vmax;
+    color: white;
+    font-weight: 300;
+
+}
+
+span {
+    color: #fca5da;
+    font-size: 1.5vmax;
+    font-weight: 100;
+    font-family: 'Caveat', cursive;
+    /* margin-right: 3px; */
+
+}
+
+.pera-main {
+    height: 20%;
+    width: 66%;
+    /* background-color: aqua; */
+    margin-left: 14%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.img-pera {
+    height: 100px;
+    width: 80px;
+}
+
+.em-text {
+    font-size: 2.5vmax;
+    text-align: center;
+    line-height: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.em-span {
+    color: white;
+}
+
+.down-pera-text {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 200;
+    font-size: 1vmax;
+    color: white;
+    margin-left: 2%;
+    text-align: center;
+}
